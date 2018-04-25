@@ -39,8 +39,26 @@ var Player = function (x, y, speed) {
     this.sprite = "images/char-princess-girl.png"
 };
 
+Player.prototype.update = function () {
+    // Keeps player on screen
+    if (this.y > 380) {
+        this.y = 380;
+    }
 
-// Now instantiate your objects.
+    if (this.x > 400) {
+        this.x = 400;
+    }
+
+    if (this.x < 0) {
+        this.x = 0;
+    }
+
+    // Reset player position if you reach the water
+    if (this.y < 0) {
+        this.x = 200;
+        this.y = 380;
+    }
+};
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
