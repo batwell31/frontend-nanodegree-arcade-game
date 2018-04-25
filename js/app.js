@@ -32,14 +32,14 @@ Enemy.prototype.render = function() {
 };
 
 // Player Class
-var Player = function (x, y, speed) {
+var Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
     this.sprite = "images/char-princess-girl.png"
 };
 
-Player.prototype.update = function () {
+Player.prototype.update = function() {
     // Keeps player on screen
     if (this.y > 380) {
         this.y = 380;
@@ -61,8 +61,25 @@ Player.prototype.update = function () {
 };
 
 // Draw the player on the screen, required method for game
-Player.prototype.render = function () {
+Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+};
+
+Player.prototype.handleInput = function(keypress) {
+    switch (keypress) {
+        case 'left':
+            this.x -= this.speed + 50;
+            break;
+        case 'up':
+            this.y -= this.speed + 30;
+            break;
+        case 'right':
+            this.x += this.speed + 50;
+            break;
+        case 'down':
+            this.y += this.speed + 30;
+            break;
+    }   
 };
 
 // Place all enemy objects in an array called allEnemies
