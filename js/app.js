@@ -13,7 +13,17 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 550) {
         this.x = -100;
         this.speed = 100 + Math.floor(Math.random() * 512);
-    }        
+    }
+    
+    // Check for collision between player and enemies
+    if (player.x < this.x + 60 &&
+        player.x + 37 > this.x &&
+        player.y < this.y + 25 &&
+        30 + player.y > this.y) {
+        //Reset player position upon collision
+        player.x = 200;
+        player.y = 380;
+    }
 };
 
 // Draw the enemy on the screen, required method for game
