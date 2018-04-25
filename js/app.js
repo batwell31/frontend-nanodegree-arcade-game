@@ -1,4 +1,4 @@
-//Enemy Class
+// Enemy Class
 var Enemy = function(x, y, speed) {
     this.x = x;
     this.y = y;
@@ -31,6 +31,7 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
+// Player Class
 var Player = function (x, y, speed) {
     this.x = x;
     this.y = y;
