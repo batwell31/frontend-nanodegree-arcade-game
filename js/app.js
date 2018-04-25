@@ -1,3 +1,10 @@
+var catGirl = document.querySelector("#cat-girl");
+var boy = document.querySelector("#boy");
+var hornGirl = document.querySelector("#horn-girl");
+var pinkGirl = document.querySelector("#pink-girl");
+var princessGirl = document.querySelector('#princess-girl');
+var scoreElement = document.querySelector('#score');
+var score = 0;
 // Enemy Class
 var Enemy = function(x, y, speed) {
     this.x = x;
@@ -23,6 +30,8 @@ Enemy.prototype.update = function(dt) {
         //Reset player position upon collision
         player.x = 0;
         player.y = 380;
+        removeMoves();
+        
     }
 };
 
@@ -57,6 +66,7 @@ Player.prototype.update = function() {
     if (this.y < 0) {
         this.x = 0;
         this.y = 380;
+        addMoves();
     }
 };
 
@@ -135,19 +145,14 @@ window.onclick = function (event) {
     }
 }
 
-var catGirl = document.querySelector("#cat-girl");
-var boy = document.querySelector("#boy");
-var hornGirl = document.querySelector("#horn-girl");
-var pinkGirl = document.querySelector("#pink-girl");
-var princessGirl = document.querySelector('#princess-girl');
-
 // Listens for clicks on the modal buttons
 // to change characters upon selection!
-catGirl.addEventListener('click',function(e){
+catGirl.addEventListener('click', function(e){
     e.preventDefault();
     player.sprite = 'images/char-cat-girl.png';
     player.x = 0;
     player.y = 380;
+    resetMoves();
 });
 
 hornGirl.addEventListener('click', function (e) {
@@ -155,6 +160,7 @@ hornGirl.addEventListener('click', function (e) {
     player.sprite = 'images/char-horn-girl.png';
     player.x = 0;
     player.y = 380;
+    resetMoves();
 });
 
 princessGirl.addEventListener('click', function (e) {
@@ -162,6 +168,7 @@ princessGirl.addEventListener('click', function (e) {
     player.sprite = 'images/char-princess-girl.png';
     player.x = 0;
     player.y = 380;
+    resetMoves();
 });
 
 boy.addEventListener('click', function (e) {
@@ -169,6 +176,7 @@ boy.addEventListener('click', function (e) {
     player.sprite = 'images/char-boy.png';
     player.x = 0;
     player.y = 380;
+    resetMoves();
 });
 
 pinkGirl.addEventListener('click', function (e) {
@@ -176,4 +184,24 @@ pinkGirl.addEventListener('click', function (e) {
     player.sprite = 'images/char-pink-girl.png';
     player.x = 0;
     player.y = 380;
+    resetMoves();
 });
+
+function addMoves() {
+    score++;
+    scoreElement.innerHTML = score;
+}
+
+function removeMoves() {
+    score--;
+    scoreElement.innerHTML = score;
+}
+
+function resetMoves() {
+    score = 0;
+    scoreElement.innerHTML = score;
+}
+
+window.onload = function () {
+    resetMoves();
+}
