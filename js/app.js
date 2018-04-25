@@ -141,27 +141,39 @@ var hornGirl = document.querySelector("#horn-girl");
 var pinkGirl = document.querySelector("#pink-girl");
 var princessGirl = document.querySelector('#princess-girl');
 
+// Listens for clicks on the modal buttons
+// to change characters upon selection!
 catGirl.addEventListener('click',function(e){
     e.preventDefault();
-    player.sprite = 'images/char-cat-girl.png'
+    player.sprite = 'images/char-cat-girl.png';
+    player.x = 0;
+    player.y = 380;
 });
 
 hornGirl.addEventListener('click', function (e) {
     e.preventDefault();
-    player.sprite = 'images/char-horn-girl.png'
+    player.sprite = 'images/char-horn-girl.png';
+    player.x = 0;
+    player.y = 380;
 });
 
 princessGirl.addEventListener('click', function (e) {
     e.preventDefault();
-    player.sprite = 'images/char-princess-girl.png'
+    player.sprite = 'images/char-princess-girl.png';
+    player.x = 0;
+    player.y = 380;
 });
 
 boy.addEventListener('click', function (e) {
     e.preventDefault();
-    player.sprite = 'images/char-boy.png'
+    player.sprite = 'images/char-boy.png';
+    player.x = 0;
+    player.y = 380;
 });
 
 pinkGirl.addEventListener('click', function (e) {
     e.preventDefault();
-    player.sprite = 'images/char-pink-girl.png'
+    player.sprite = 'images/char-pink-girl.png';
+    player.x = 0;
+    player.y = 380;
 });
