@@ -82,8 +82,9 @@ Player.prototype.handleInput = function(keypress) {
     }   
 };
 
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
+// All enemies will be pushed into this array
+var allEnemies = [];
+var enemy;
 
 
 
