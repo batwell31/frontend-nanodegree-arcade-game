@@ -36,7 +36,7 @@ var Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = 'images/char-cat-girl.png';
+    this.sprite = 'images/char-horn-girl.png';
 };
 
 Player.prototype.update = function() {
@@ -134,3 +134,34 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+var catGirl = document.querySelector("#cat-girl");
+var boy = document.querySelector("#boy");
+var hornGirl = document.querySelector("#horn-girl");
+var pinkGirl = document.querySelector("#pink-girl");
+var princessGirl = document.querySelector('#princess-girl');
+
+catGirl.addEventListener('click',function(e){
+    e.preventDefault();
+    player.sprite = 'images/char-cat-girl.png'
+});
+
+hornGirl.addEventListener('click', function (e) {
+    e.preventDefault();
+    player.sprite = 'images/char-horn-girl.png'
+});
+
+princessGirl.addEventListener('click', function (e) {
+    e.preventDefault();
+    player.sprite = 'images/char-princess-girl.png'
+});
+
+boy.addEventListener('click', function (e) {
+    e.preventDefault();
+    player.sprite = 'images/char-boy.png'
+});
+
+pinkGirl.addEventListener('click', function (e) {
+    e.preventDefault();
+    player.sprite = 'images/char-pink-girl.png'
+});
