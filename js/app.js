@@ -3,25 +3,25 @@ var Enemy = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = 'images/enemy-bug.png';
+    this.sprite = 'images/char-horn-girl.png';
 };
 
 Enemy.prototype.update = function(dt) {
     this.x += this.speed * dt;
 
     // Resets enemy position when it goes off canvas!
-    if (this.x > 550) {
+    if (this.x > 575) {
         this.x = -100;
-        this.speed = 100 + Math.floor(Math.random() * 512);
+        this.speed = 100 + Math.floor(Math.random() * 400);
     }
     
     // Check for collision between player and enemies
-    if (player.x < this.x + 60 &&
-        player.x + 37 > this.x &&
-        player.y < this.y + 25 &&
-        30 + player.y > this.y) {
+    if (player.x < this.x + 75 &&
+        player.x + 75 > this.x &&
+        player.y < this.y + 75 &&
+        75 + player.y > this.y) {
         //Reset player position upon collision
-        player.x = 200;
+        player.x = 0;
         player.y = 380;
     }
 };
@@ -36,7 +36,7 @@ var Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = "images/char-princess-girl.png"
+    this.sprite = 'images/char-cat-girl.png';
 };
 
 Player.prototype.update = function() {
@@ -55,7 +55,7 @@ Player.prototype.update = function() {
 
     // Reset player position if you reach the water
     if (this.y < 0) {
-        this.x = 200;
+        this.x = 0;
         this.y = 380;
     }
 };
@@ -85,10 +85,16 @@ Player.prototype.handleInput = function(keypress) {
 // All enemies will be pushed into this array
 var allEnemies = [];
 var enemy;
+// positions the enemies on these y cordinates
+var enemyPosition = [60, 140, 220];
 
 // assign a new Player with (x, y, speed) to a variable
-var player = new Player(100, 380, 50);
+var player = new Player(0, 380, 50);
 
+enemyPosition.forEach(function (posY) {
+    enemy = new Enemy(0, posY, 100 + Math.floor(Math.random() * 400));
+    allEnemies.push(enemy);
+});
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
