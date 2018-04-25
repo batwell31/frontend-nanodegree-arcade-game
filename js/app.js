@@ -5,6 +5,9 @@ var pinkGirl = document.querySelector("#pink-girl");
 var princessGirl = document.querySelector('#princess-girl');
 var scoreElement = document.querySelector('#score');
 var score = 0;
+var winTxt = document.querySelector('#win-txt');
+var winTxt2 = document.querySelector('#win-txt2');
+
 // Enemy Class
 var Enemy = function(x, y, speed) {
     this.x = x;
@@ -153,6 +156,7 @@ catGirl.addEventListener('click', function(e){
     player.x = 0;
     player.y = 380;
     resetMoves();
+    reset();
 });
 
 hornGirl.addEventListener('click', function (e) {
@@ -161,6 +165,7 @@ hornGirl.addEventListener('click', function (e) {
     player.x = 0;
     player.y = 380;
     resetMoves();
+    reset();
 });
 
 princessGirl.addEventListener('click', function (e) {
@@ -169,6 +174,7 @@ princessGirl.addEventListener('click', function (e) {
     player.x = 0;
     player.y = 380;
     resetMoves();
+    reset();
 });
 
 boy.addEventListener('click', function (e) {
@@ -177,6 +183,7 @@ boy.addEventListener('click', function (e) {
     player.x = 0;
     player.y = 380;
     resetMoves();
+    reset();
 });
 
 pinkGirl.addEventListener('click', function (e) {
@@ -185,11 +192,15 @@ pinkGirl.addEventListener('click', function (e) {
     player.x = 0;
     player.y = 380;
     resetMoves();
+    reset();
 });
 
 function addMoves() {
     score++;
     scoreElement.innerHTML = score;
+    if (score === 10) {
+        winCondition();
+    }
 }
 
 function removeMoves() {
@@ -204,4 +215,18 @@ function resetMoves() {
 
 window.onload = function () {
     resetMoves();
+}
+
+function winCondition() {    
+    winTxt.innerHTML = 'Congrats on Winning! ...but you kinda got turned into a bug by the Evil Princess!';
+    winTxt2.innerHTML = 'Feel free to keep playing as a bug :)';
+    //turns you into a bug!
+    player.sprite = 'images/enemy-bug.png';
+    enemy.sprite = 'images/char-princess-girl.png';
+}
+
+function reset () {
+    enemy.sprite = 'images/enemy-bug.png';
+    winTxt.innerHTML = '';
+    winTxt2.innerHTML = '';
 }
