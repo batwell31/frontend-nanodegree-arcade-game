@@ -1,10 +1,8 @@
-// Enemies our player must avoid
-var Enemy = function() {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+//Enemy Class
+var Enemy = function(x, y, speed) {
+    this.x = x;
+    this.y = y;
+    this.speed = speed;
     this.sprite = 'images/enemy-bug.png';
 };
 
