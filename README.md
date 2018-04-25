@@ -1,6 +1,42 @@
 frontend-nanodegree-arcade-game
 ===============================
+This Clasic Arcade Game Clone was provided to me as one of my projects in the Front-End Web Developer Nanodegree by Udacity.
+It's a modern varation of Frogger the classic arcade game, developed with HTML 5, Canvas Element, and Object Oriented JavaScript.
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Try it live ##
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+
+
+## CHARACTER SELECTION ##
+ (**WARNING: THIS WILL RESET THE GAME, AS WELL AS YOUR SCORE!**)
+
+ I have implemented the option for character selection!
+
+1. Click the Change Player button at the top of the screen
+    1a. Notice a Modal will apear
+2. Click the character (button) you wish to be!
+    2.a THIS WILL RESET YOUR GAME
+3. Clicking the (x), or outside the modal will close it!
+   
+
+## HOW TO PLAY ##
+
+* The goal is to reach the water without getting hit by the 'bugs'
+    * Reaching the water will:
+        * Add 1 point to your total score
+        * Reset your position to where you first started!
+    * Colliding with an enemy will:
+        * Cause your score go down 1 point, so becareful!
+* The player (you) will move with the arrow keys on your keyboard.
+    *(Left/Right/Up/Down)
+
+## HOW TO WIN!? ##
+
+Well that's easy just get a score of 10!
+ * There will be a suprise at the end as well!
+ * You can reset the game by changing your character at the end as well!
+
+
+ ## Acknowledgements ##
+
+ index.html, js/resources.js, and js/engine.js were provided to me as part of the Udacity's Front-End Web Development Nanodegree.
