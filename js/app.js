@@ -218,8 +218,8 @@ window.onload = function () {
 }
 
 function winCondition() {    
-    winTxt.innerHTML = 'Congrats on Winning! ...but you kinda got turned into a bug by the Evil Princess!';
-    winTxt2.innerHTML = 'Feel free to keep playing as a bug :)';
+    winTxt.innerHTML = 'Congrats on Winning! ';
+    winTxt2.innerHTML = '...but you kinda got turned into a bug by the Evil Princess!';
     //turns you into a bug!
     player.sprite = 'images/enemy-bug.png';
     enemy.sprite = 'images/char-princess-girl.png';
