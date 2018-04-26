@@ -5,7 +5,7 @@ It's a modern varation of Frogger the classic arcade game, developed with HTML 5
 
 ## Try it live ##
 
-
+https://batwell31.github.io/frontend-nanodegree-arcade-game/
 
 ## CHARACTER SELECTION ##
  (**WARNING: THIS WILL RESET THE GAME, AS WELL AS YOUR SCORE!**)
