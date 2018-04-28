@@ -40,7 +40,7 @@ You can:
         * Cause your score go down 1 point, so becareful!
 
 * The player (you) will move with the arrow keys on your keyboard.
-    *(Left/Right/Up/Down)
+    * (Left/Right/Up/Down)
 
 ## HOW TO WIN!? ##
 
