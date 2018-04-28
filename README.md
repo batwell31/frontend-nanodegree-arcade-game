@@ -3,7 +3,7 @@ frontend-nanodegree-arcade-game
 This Clasic Arcade Game Clone was provided to me as one of my projects in the Front-End Web Developer Nanodegree by Udacity.
 It's a modern varation of Frogger the classic arcade game, developed with HTML 5, Canvas Element, and Object Oriented JavaScript.
 
-## Try it live ##
+## TRY IT LIVE ##
 
 https://batwell31.github.io/frontend-nanodegree-arcade-game/
 
@@ -12,11 +12,13 @@ https://batwell31.github.io/frontend-nanodegree-arcade-game/
 
  I have implemented the option for character selection!
 
-1. Click the Change Player button at the top of the screen
+1. Walk your player over to the selector image on the bottom right of the screen
     1a. Notice a Modal will apear
 2. Click the character (button) you wish to be!
     2.a THIS WILL RESET YOUR GAME
-3. Clicking the (x), or outside the modal will close it!
+3. Selecting a different character will reset your location
+    3.a Also walking away from the selector platform will also close the modal!
+    3.b Give it a try!
    
 ## MUSIC CONTROLS ##
 
