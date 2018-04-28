@@ -12,7 +12,7 @@ var audio, playbtn, mutebtn, seek_bar;
 function initAudioPlayer() {
     audio = new Audio();
     // I got this mp3 from (https://freesound.org/people/parkourbrad1/sounds/346842/)
-    audio.src = "audio/hat-films-improv-remix.mp3";
+    audio.src = "audio/Hat-Films-Remix.mp3";
     audio.loop = true;
     audio.play();
     // Set object refrences
