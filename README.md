@@ -13,12 +13,12 @@ https://batwell31.github.io/frontend-nanodegree-arcade-game/
  I have implemented the option for character selection!
 
 1. Walk your player over to the selector image on the bottom right of the screen
-    1a. Notice a Modal will apear
+    * Notice a Modal will apear
 2. Click the character (button) you wish to be!
-    2.a THIS WILL RESET YOUR GAME
+    * THIS WILL RESET YOUR GAME
 3. Selecting a different character will reset your location
-    3.a Also walking away from the selector platform will also close the modal!
-    3.b Give it a try!
+    * Also walking away from the selector platform will also close the modal!
+    * Give it a try!
    
 ## MUSIC CONTROLS ##
 
