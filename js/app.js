@@ -7,6 +7,17 @@ var scoreElement = document.querySelector('#score');
 var score = 0;
 var winTxt = document.querySelector('#win-txt');
 var winTxt2 = document.querySelector('#win-txt2');
+var audio, playbtn, seek_bar;
+
+function initAudioPlayer() {
+    audio = new Audio();
+    // I got this mp3 from (https://freesound.org/people/parkourbrad1/sounds/346842/)
+    audio.src = "audio/hat-films-improv-remix.mp3";
+    audio.loop = true;
+    audio.play();
+}
+
+window.addEventListener('load', initAudioPlayer);
 
 // Enemy Class
 var Enemy = function(x, y, speed) {
