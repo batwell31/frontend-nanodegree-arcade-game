@@ -16,7 +16,7 @@ https://batwell31.github.io/frontend-nanodegree-arcade-game/
     * Notice a Modal will apear
 2. Click the character (button) you wish to be!
     * THIS WILL RESET YOUR GAME
-3. Selecting a different character will reset your location
+3. Selecting a different character will also reset your location (**closing the modal**)
     * Also walking away from the selector platform will also close the modal!
     * Give it a try!
    
