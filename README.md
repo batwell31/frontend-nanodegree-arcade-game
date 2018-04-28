@@ -38,6 +38,7 @@ You can:
         * Reset your position to where you first started!
     * Colliding with an enemy will:
         * Cause your score go down 1 point, so becareful!
+
 * The player (you) will move with the arrow keys on your keyboard.
     *(Left/Right/Up/Down)
 
