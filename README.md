@@ -18,6 +18,15 @@ https://batwell31.github.io/frontend-nanodegree-arcade-game/
     2.a THIS WILL RESET YOUR GAME
 3. Clicking the (x), or outside the modal will close it!
    
+## MUSIC CONTROLS ##
+
+Music will start playing upon page load.
+You can:
+* Pause the music by pressing the 'Pause Button'
+    * Turn it back on by pressing the 'Play Button'
+
+* Mute the music by pressing the 'Speaker Button'
+    * Un-Mute the music by pressing the 'Muted-Speaker Button'
 
 ## HOW TO PLAY ##
 
