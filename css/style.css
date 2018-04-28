@@ -4,7 +4,8 @@ body {
 
 .wrapper {
     margin: auto;
-    display: inline;
+    display: block;
+    padding: 5px;
 }
 
 #myBtn {
@@ -12,6 +13,26 @@ body {
     background: #f00;
     color: #fff;
     font-size: 32px;
+}
+
+button#playpausebtn {
+    background-image: url(../images/audio-pause.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+button#mutebtn {
+    background-image: url(../images/audio-mute.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
 }
 
 /* The Modal (background) */
