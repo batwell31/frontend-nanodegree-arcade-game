@@ -46,10 +46,12 @@ You can:
 
 ## HOW TO WIN!? ##
 
-Well that's easy just get a score of 10!
- * There will be a suprise at the end as well!
- * You can reset the game by changing your character at the end as well!
+* To win all you have to do is get a score of 10
+    * (REMINDER: Getting hit by the bugs will make your score go down)
+    * Changing characters at any point will reset your score, so keep that in mind!   
 
+* There will be a suprise at the end as well!
+    * If you wish to keep playing after you win the game feel free!
 
  ## Acknowledgements ##
 
