@@ -7,7 +7,7 @@ var scoreElement = document.querySelector('#score');
 var score = 0;
 var winTxt = document.querySelector('#win-txt');
 var winTxt2 = document.querySelector('#win-txt2');
-var audio, playbtn, seek_bar;
+var audio, playbtn, mutebtn, seek_bar;
 
 function initAudioPlayer() {
     audio = new Audio();
@@ -15,6 +15,34 @@ function initAudioPlayer() {
     audio.src = "audio/hat-films-improv-remix.mp3";
     audio.loop = true;
     audio.play();
+    // Set object refrences
+    playbtn = document.querySelector('#playpausebtn');
+    mutebtn = document.querySelector('#mutebtn');
+    // Add Event Handling
+    playbtn.addEventListener('click', playPause);
+    mutebtn.addEventListener('click', mute);
+    // Audio Icons were provided to be by
+    // (http://www.iconarchive.com/show/audio-video-outline-icons-by-danieledesantis.html)
+
+    // Functions
+    function playPause() {
+        if (audio.paused) {
+            audio.play();
+            playbtn.style.background = "url(images/audio-pause.png) no-repeat";
+        } else {
+            audio.pause();
+            playbtn.style.background = "url(images/audio-play.png) no-repeat";
+        }
+    }
+    function mute() {
+        if (audio.muted) {
+            audio.muted = false;
+            mutebtn.style.background = "url(images/audio-speaker.png) no-repeat";
+        } else {
+            audio.muted = true;
+            mutebtn.style.background = "url(images/audio-speaker-muted.png) no-repeat";
+        }
+    }
 }
 
 window.addEventListener('load', initAudioPlayer);

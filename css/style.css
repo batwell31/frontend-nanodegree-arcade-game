@@ -4,7 +4,7 @@ body {
 
 .wrapper {
     margin: auto;
-    display: block;
+    display: inline-block;
     padding: 5px;
 }
 
@@ -13,26 +13,24 @@ body {
     background: #f00;
     color: #fff;
     font-size: 32px;
+    height: 64px;
+    float: left;
 }
 
 button#playpausebtn {
-    background-image: url(../images/audio-pause.png);
-    background-repeat: no-repeat;
+    background: url(../images/audio-pause.png) no-repeat; 
     width: 64px;
     height: 64px;
     cursor: pointer;
-    border: none;
-    background-color: #fff;
+    border: none;   
 }
 
 button#mutebtn {
-    background-image: url(../images/audio-mute.png);
-    background-repeat: no-repeat;
+    background: url(../images/audio-speaker.png) no-repeat;
     width: 64px;
     height: 64px;
     cursor: pointer;
     border: none;
-    background-color: #fff;
 }
 
 /* The Modal (background) */
@@ -76,7 +74,9 @@ button#mutebtn {
 }
 
 .score {
-    font-size: 22px;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px;
 }
 
 .win-txt {
