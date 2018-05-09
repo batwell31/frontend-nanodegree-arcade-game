@@ -1,7 +1,7 @@
 frontend-nanodegree-arcade-game
 ===============================
-This Clasic Arcade Game Clone was provided to me as one of my projects in the Front-End Web Developer Nanodegree by Udacity.
-It's a modern varation of Frogger the classic arcade game, developed with HTML 5, Canvas Element, and Object Oriented JavaScript.
+This is the third project I've completed through Udacity.  It is a 
+Classic Arcade Game Clone was provided to me as one of my projects in the Front-End Web Developer Nanodegree by Udacity. It's a modern variation of Frogger the classic arcade game, developed with HTML 5, Canvas Element, and Object Oriented JavaScript.
 
 ## TRY IT LIVE ##
 
